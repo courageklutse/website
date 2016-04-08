@@ -83,3 +83,42 @@ ul.feature-list {
 
 .orange-text {
   color: #f37e02; }
+
+
+/*----- FOOTER -----*/
+.full-width {
+  max-width: 1200px;
+}
+
+.footer {
+  background-color: #1C1D1C;
+  padding: 3rem 4rem 2rem 4rem;
+  text-align: center;
+  color: #CECECE;
+}
+
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #fff;
+}
+
+.footer .maintain-height:nth-child(n+2) {
+  min-height: 60px;
+}
+
+.footer-links {
+  min-width: 95px;
+  max-height: 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+p.copywrite-text {
+  color: #6C6C6C;
+}
+
+.social-media-icons {
+  max-height: 20px;
+  margin: 0 20px 0 20px;
+}
