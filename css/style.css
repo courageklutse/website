@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+body {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-family: 'Muli', sans-serif; }
+
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
+video.fullscreen {
+  width: 100%;
+  margin-top: -5%; }
+
+.hero {
+  overflow: hidden;
+  width: 100%;
+  height: 640px; }
+
+.title {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 30px; }
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .feature-list img {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    margin-top: -6px; }
+  .feature-list h6 {
+    display: inline;
+    font-weight: 500;
+    font-size: 1.25em;
+    margin-left: 20px; }
+  .feature-list li {
+    text-align: left; }
+  .feature-list p {
+    margin-top: 10px;
+    margin-bottom: 2em;
+    margin-left: 55px;
+    margin-right: 10px;
+    font-size: 1.1em; }
+
+.feature.gradient {
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #f8fafc));
+  background: -webkit-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -o-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: -ms-linear-gradient(top, white 0%, #f8fafc 100%);
+  background: linear-gradient(to bottom, white 0%, #f8fafc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8fafc', GradientType=0 ); }
+
+.gray {
+  background: #F8FAFC; }
+
+.red {
+  background: red; }
+
+.blue-text {
+  color: #3590fc; }
+
+.purple-text {
+  color: #a82ed1; }
+
+.pink-text {
+  color: #ff3686; }
+
+.red-text {
+  color: #ee1111; }
+
+.green-text {
+  color: #7ed321; }
+
+.orange-text {
+  color: #f37e02; }
