@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 body {
   margin: 0;
-  padding: 0; }
-
-h1 {
+  padding: 0;
   font-family: 'Muli', sans-serif; }
 
 .fullWidth {
@@ -27,22 +25,25 @@ video.fullscreen {
   font-size: 30px; }
 
 .feature-list {
+  padding-bottom: 2em; }
+
+ul.feature-list {
   list-style: none;
   padding: 0;
   margin: 0; }
-  .feature-list img {
+  ul.feature-list img {
     display: inline-block;
     width: 30px;
     height: auto;
     margin-top: -6px; }
-  .feature-list h6 {
+  ul.feature-list h6 {
     display: inline;
     font-weight: 500;
     font-size: 1.25em;
     margin-left: 20px; }
-  .feature-list li {
+  ul.feature-list li {
     text-align: left; }
-  .feature-list p {
+  ul.feature-list p {
     margin-top: 10px;
     margin-bottom: 2em;
     margin-left: 55px;
