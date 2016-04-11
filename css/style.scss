@@ -125,15 +125,25 @@ nav {
     margin-top: 1.1em;
   }
 
-  li {
-    margin: 1.4em;
-    display: inline;
-  }
-
   a {
     color: white;
     font-weight: 400;
     font-size: 0.8em;
+  }
+
+  li {
+    margin: 1.4em;
+    display: inline;
+
+    a {
+      color: white;
+      -webkit-transition: color 1s;
+
+      :hover {
+        color: $blue;
+        -webkit-transition: color 1s;
+      }
+    }
   }
 }
 
@@ -204,7 +214,13 @@ footer {
   a {
     font-size: 0.7em;
     color: white;
+    -webkit-transition: color 1s;
     margin: 0 1.4em;
+
+    :hover {
+      color: $blue;
+      -webkit-transition: color 1s;
+    }
   }
 
   p {
@@ -219,6 +235,7 @@ footer {
   li {
     display: inline;
   }
+
 }
 
 .title {
