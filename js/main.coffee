@@ -17,4 +17,4 @@ $ ->
 
 
   $('video.fullscreen').bind "ended", ->
-    console.log "I'm done"
+    $('.overlay').hide().fadeIn()
