@@ -216,6 +216,12 @@ footer {
 
 .feature-list {
   padding-bottom: 2em;
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: -20px -10px 0 0;
+  }
 }
 
 .feature.gradient {
