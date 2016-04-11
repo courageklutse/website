@@ -185,17 +185,22 @@ nav {
     font-family: 'Dosis', sans-serif;
     border-radius: 5px;
     border-width: 0px;
+    margin-top: 1em;
   }
 
   input[type=email] {
     width: 70%;
     margin-right: 10px;
     color: rgb(153, 153, 153);
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-left: 30px;
+    height: 60px;
   }
 
   input[type=submit] {
     width: 25%;
-    height: 48px;
+    height: 60px;
     background-color: $blue;
     color: white;
   }
