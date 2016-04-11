@@ -7,13 +7,13 @@ $ ->
       video.pause()
       $('.overlay').hide().fadeIn()
 
-
   $('.resume').bind "click", (e) ->
     e.preventDefault()
     if video.paused
       video.play()
       $('.overlay').fadeOut()
 
-
   $('video.fullscreen').bind "ended", ->
     $('.overlay').hide().fadeIn()
+    $('.play').removeClass(hide, 0, "easeInBack" )
+    $('.resume').addClass(hide, 0, "easeInBack" )
