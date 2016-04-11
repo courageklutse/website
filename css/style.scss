@@ -85,17 +85,16 @@ h2 {
     }
 
     .video-control {
-      background: red;
       z-index: 999;
       color: white;
       display: inline-block;
-      //font-weight: 600;
-      //margin: 2em 0 1em;
-      //height: 70px;
-      //width: 320px;
-      //line-height: 70px;
-      //border-radius: 50px;
-      //border: 2px solid white;
+      font-weight: 600;
+      margin: 2em 0 1em;
+      height: 70px;
+      width: 320px;
+      line-height: 70px;
+      border-radius: 50px;
+      border: 2px solid white;
     }
 
     a.download {
