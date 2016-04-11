@@ -10,7 +10,6 @@ $ ->
 
   $('.resume').bind "click", (e) ->
     e.preventDefault()
-    console.log "lala"
     if video.paused
       video.play()
       $('.overlay').fadeOut()
