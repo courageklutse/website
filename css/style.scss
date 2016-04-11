@@ -302,8 +302,47 @@ footer {
   .hero {
     height: 700px;
 
+    h1 {
+      text-align: center;
+      margin-left: 0.5em;
+    }
+
+    ul {
+      margin: 15px 0 0 9px;;
+      text-align: center;
+
+      li {
+        margin: 0.4em;
+      }
+    }
+
     video {
       max-height: 800px;
+    }
+
+    .overlay-title {
+      display: none;
+    }
+
+    .video-control {
+      margin-top: 230px !important;
+      width: 300px !important;
+    }
+
+    .download {
+      width: 300px !important;
+    }
+  }
+
+  .feature-list {
+    .text-right, h2, p {
+      text-align: center;
+    }
+  }
+
+  .beta-signup {
+    h2, p, form {
+      padding: 10px;
     }
   }
 }
