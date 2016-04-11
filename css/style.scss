@@ -171,14 +171,27 @@ nav {
   input {
     float: left;
     height: 3em;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 5px;
+    border-width: 0px;
   }
 
   input[type=email] {
     width: 70%;
+    margin-right: 10px;
+    color: rgb(153, 153, 153);
   }
 
   input[type=submit] {
-    width: 30%;
+    width: 25%;
+    height: 48px;
+    background-color: $blue;
+    color: white;
+  }
+
+  input:focus {
+    border-color: $blue;
+    box-shadow:none;
   }
 }
 
