@@ -1,0 +1,292 @@
+//@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,300,200&subset=latin,latin-ext);
+//@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300,200);
+
+$blue: #3590FC;
+$purple: #A82ED1;
+$pink: #FF3686;
+$red: #EE1111;
+$green: #7ED321;
+$orange: #F37E02;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: #999;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  video {
+    position: absolute;
+    z-index: -999;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .overlay {
+
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    padding-top: 10%;
+    z-index: -99;
+
+    h1, h2 {
+      color: white;
+    }
+
+    h1 {
+      font-weight: 200;
+      font-size: 5.5em;
+      margin: 0;
+      line-height: 1em;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 2.4em;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+
+    .video-control {
+      background: red;
+      z-index: 999;
+      color: white;
+      display: inline-block;
+      //font-weight: 600;
+      //margin: 2em 0 1em;
+      //height: 70px;
+      //width: 320px;
+      //line-height: 70px;
+      //border-radius: 50px;
+      //border: 2px solid white;
+    }
+
+    a.download {
+      font-weight: 600;
+      display: inline-block;
+      color: black;
+      background: white;
+      width: 320px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50px;
+    }
+  }
+}
+
+nav {
+
+  position: absolute;
+
+  h1 {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 1.1em;
+  }
+
+  li {
+    margin: 1.4em;
+    display: inline;
+  }
+
+  a {
+    color: white;
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+}
+
+.short-feature {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+  }
+
+  p {
+    margin-top: 0.7em;
+    margin-bottom: 2em;
+  }
+}
+
+.beta-signup {
+  text-align: center;
+  padding: 3em 0;
+
+  input {
+    float: left;
+    height: 3em;
+  }
+
+  input[type=email] {
+    width: 70%;
+  }
+
+  input[type=submit] {
+    width: 30%;
+  }
+}
+
+footer {
+
+  padding: 4em 0;
+  background: #1F1F1F;
+  text-align: center;
+
+  a {
+    font-size: 0.7em;
+    color: white;
+    margin: 0 1.4em;
+  }
+
+  p {
+    margin-top: 4em;
+    font-size: 0.6em;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+  }
+}
+
+.title {
+  text-align: center;
+  padding: 2em 0;
+  font-size: 30px;
+}
+
+.feature-list {
+  padding-bottom: 2em;
+}
+
+.feature.gradient {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(248,250,252,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,250,252,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8fafc', GradientType=0 );
+}
+
+.gray {
+  background: #F8FAFC;
+}
+
+.red {
+  background: red;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.purple-text {
+  color: $purple;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.red-text {
+  color: $red;
+}
+
+.green-text {
+  color: $green;
+}
+.orange-text {
+  color: $orange;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .hero {
+    height: 700px;
+
+    video {
+      max-height: 800px;
+    }
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hero {
+    height: 800px;
+
+    video {
+      max-height: 900px;
+    }
+  }
+
+  footer {
+    a {
+      margin: 0 1em;
+    }
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .hero {
+    height: 920px;
+  }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
