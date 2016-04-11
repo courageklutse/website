@@ -37,6 +37,9 @@ $ ->
     leavingOverlay = true
 
   # Video ends
-  $(video).bind "ended", ->
-    $('.overlay').fadeIn()
-    showReplayButton(true)
+  $(video).bind "timeupdate", (e) ->
+    currentTime = video.currentTime
+    if currentTime > 39
+      $('.overlay').fadeIn()
+      showReplayButton(true)
+
