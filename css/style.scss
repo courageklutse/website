@@ -151,9 +151,23 @@ nav {
   }
 }
 
+.showcase-video {
+
+  padding: 3em 0;
+
+  video {
+    display: block;
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 900px;
+  }
+}
+
 .beta-signup {
+
   text-align: center;
   padding: 3em 0;
+  background: #292929;
 
   input {
     float: left;
