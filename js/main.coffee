@@ -1,19 +1,42 @@
 $ ->
 
   video = $('#hero-video')[0]
+  leavingOverlay = false
 
+  # Helper function
+  showReplayButton = (showReplay) ->
+    if showReplay
+      $('.play').removeClass("hide", 0, "easeInBack" )
+      $('.resume').addClass("hide", 0, "easeInBack" )
+    else
+      $('.play').addClass("hide", 0, "easeInBack" )
+      $('.resume').removeClass("hide", 0, "easeInBack" )
+
+  # Click on playing video
   $('.hero').bind "click", ->
-    if !video.paused
+    if !video.paused and !leavingOverlay
       video.pause()
-      $('.overlay').hide().fadeIn()
+      showReplayButton(false)
+      $('.overlay').fadeIn()
+    else
+      leavingOverlay = false
 
+  # Click on resume button
   $('.resume').bind "click", (e) ->
     e.preventDefault()
     if video.paused
       video.play()
       $('.overlay').fadeOut()
+      leavingOverlay = true
 
-  $('video.fullscreen').bind "ended", ->
-    $('.overlay').hide().fadeIn()
-    $('.play').removeClass(hide, 0, "easeInBack" )
-    $('.resume').addClass(hide, 0, "easeInBack" )
+  # Click on replay button
+  $('.play').bind "click", (e) ->
+    e.preventDefault()
+    video.play()
+    $('.overlay').fadeOut()
+    leavingOverlay = true
+
+  # Video ends
+  $(video).bind "ended", ->
+    $('.overlay').fadeIn()
+    showReplayButton(true)
