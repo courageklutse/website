@@ -43,3 +43,11 @@ $ ->
       $('.overlay').fadeIn()
       showReplayButton(true)
 
+  $(window).scroll (e) ->
+    offsetTop = $(window).scrollTop()
+    if offsetTop > 500
+      video.pause()
+      showReplayButton(false)
+      $('.overlay').fadeIn()
+
+
