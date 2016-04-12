@@ -47,10 +47,9 @@ h2 {
     position: absolute;
     z-index: -999;
     min-width: 100%;
-    min-height: 100%;
     left: 50%;
-    top: 45%;
-    transform: translateX(-50%) translateY(-50%);
+    bottom: 0;
+    transform: translateX(-50%) translateY(8%);
   }
 
   .overlay {
@@ -358,7 +357,7 @@ footer {
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   .hero {
-    height: 700px;
+    height: 600px;
 
     h1 {
       text-align: center;
@@ -434,7 +433,7 @@ footer {
 /* Large and up */
 @media screen and (min-width: 64em) {
   .hero {
-    height: 920px;
+    height: 900px;
   }
 }
 
